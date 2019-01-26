@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DynamicModule } from './dynamic/dynamic.module';
+import { PingFormComponent } from './dynamic/ping-form/ping-form.component';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DynamicModule
   ],
   providers: [],
   bootstrap: [AppComponent]
